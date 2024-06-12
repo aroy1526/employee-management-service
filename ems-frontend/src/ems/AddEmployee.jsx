@@ -113,7 +113,7 @@ getEmployee(id).then(Response=>{
                         </div>
                         {emperror.email && <p style={{ color: 'red' }}>{emperror.email}</p>}
                         <div className='form-group mb-2'>
-                            <label className='form-lebel'>Email:</label>
+                            <label className='form-lebel'>Phone Number:</label>
                             <input type='text'
                             placeholder='Enter Phone Number'
                             name='phoneNumber'

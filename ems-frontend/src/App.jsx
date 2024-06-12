@@ -7,6 +7,8 @@ import HeaderComponent from './ems/HeaderComponent'
 import FooterComponent from './ems/FooterComponent'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import AddEmployee from './ems/AddEmployee'
+import ListOfDepartment from './ems/DepartmentList'
+import { SaveDepartment } from './ems/AddDepartment'
 
 function App() {
 
@@ -20,6 +22,9 @@ function App() {
       <Route path='/employees' element={<EmployeeList/>}> </Route>
       <Route path='/add-employee' element={<AddEmployee/>}></Route>
       <Route path='/edit-employee/:id' element={<AddEmployee/>}></Route>
+      <Route path='/departments' element={<ListOfDepartment/>}></Route>
+      <Route path='/add-Department' element={<SaveDepartment/>}></Route>
+      <Route path='/edit-Department/:id' element={<SaveDepartment/>}></Route>
     </Routes>
     <FooterComponent/>
     </BrowserRouter>
